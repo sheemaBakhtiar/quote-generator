@@ -3,7 +3,7 @@ const display = document.querySelector(".display");
 const option = document.getElementById("Quote");
 
 async function apicall(key,api_key) {
-    let response  = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${key}`,{headers: { 'X-API-Key':'O4cd2WzJFR6iTHDd5zVDmZHvONNNeiMNNiZml25m'}});
+    let response  = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${key}`,{headers: { 'X-API-Key':'qjnvQWkCtkbwB1YtAWf+Hw==jUPJ9QiFSgzKdgui'}});
     const data = await response.json();
     display.innerHTML = data[0].quote; 
     console.log(response);
